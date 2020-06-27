@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		var a = 10;
+		var b = 20;
+
+		document.getElementById("demo").innerHTML = (a<20 && b>10) + "<br>" + (a>20 && b>10) + "<br>" + (a<20 || b>10) + "<br>" + (a>20 && b<5); //true
+	</script>
+</body>
+</html>

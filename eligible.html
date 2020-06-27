@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function checkEligible() 
+		{
+			var age = document.getElementById("age").value;
+			var x = (age >= 18) ? "Eligible " : "Not Eligible";
+			document.getElementById("k").innerHTML = x+ " to vote"
+		}
+	</script>
+</head>
+<body bgcolor="aqua">
+	Enter your age : <input type="text" id="age">
+	<input type="button" value="check" onclick="checkEligible()">
+	<h1 id="k"></h1>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function addNumber()
+		{
+			var i = parseInt(document.getElementById("fno").value);
+			var j = parseInt(document.getElementById("sno").value);
+			// document.write(i+j);
+			var Result = i+j;
+			document.getElementById("res").value = Result;
+			document.getElementById("demo").innerHTML = "Addition is "+Result;
+		}
+	</script>
+</head>
+<body>
+	
+		Enter first number &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="fno"> <br>
+		Enter second number <input type="text" id="sno"> <br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="button" value="add" onclick="addNumber()"></input><br>
+		Result : <input type="text" id="res">
+		<h1 id="demo"></h1>
+</body>
+</html>

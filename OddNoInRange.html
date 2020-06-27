@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function findOddNo() 
+		{
+			var x = document.getElementById("oddrange1").value;
+			var y = document.getElementById("oddrange2").value;
+			
+			document.write("Odd numbers are <br> -----------------------------<br>")
+			for (var i = x; i < y; i++) 
+			{
+				if (i%2 != 0) 
+				{
+					document.write(i);
+					document.write("<hr>");
+				}
+			}			
+		}
+	</script>
+</head>
+<body>
+	Enter ranges from low to high : <input type="text" id="oddrange1"/>
+					<input type="text" id="oddrange2"/>
+					<input type="button" value="ClickMe" onclick="findOddNo()">
+</body>
+</html>

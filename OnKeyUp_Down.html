@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function color(color) 
+		{
+			document.forms[0].myInput.style.background = color;
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<br/>
+		<input type="text" onkeydown="color('yellow')" onkeyup="color('red')" name="myInput">
+	</form>
+</body>
+</html>

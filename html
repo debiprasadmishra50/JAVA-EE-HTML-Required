@@ -1,0 +1,1395 @@
+
+
+
+Scripting language
+------------------------
+
+client side Scripting language
+----------------------------------------
+js
+vb
+
+Server side Scripting language
+----------------------------------------
+php
+asp
+jsp
+
+markup language
+================
+
+client side markup language
+-------------------------------
+html
+xaml
+dhtml
+
+client side markup language
+-------------------------------
+smarty
+blade
+
+HTML
+======
+It is client side mark-up language
+The abbreviation is Hypertext markup language
+It is used to add web elements like textfield , button , drop down list, check box radio button etc..
+
+All html elements must be enclosed between starting and ending tag of <html>
+
+
+<html>tag having two parts :--
+
+1. head part
+2. body part
+
+head part contains exeternal elements of the webpage 
+
+Body part contains the elements those are visible in the webpage.
+
+
+
+Comments in html
+----------------------------
+
+<!-- comments lines in html -->
+
+Syntax in html
+----------------------------
+<html>
+	<head>
+
+		<!--content part-->
+
+	</head>
+
+	<body>
+
+		<!--the elements whih are visible in the webpage-->
+
+	</body>
+
+</html>
+
+
+types of tag
+==============
+
+1) single line ending tag
+---------------------------
+
+		- not able to contains any elements or text
+	Ex:-
+		<br/>
+		<hr/>
+		<img/>
+		</input>
+
+2)multiline ending tag
+-------------------------
+It contains any inner elements or text
+
+
+ex:-
+<head></head>
+<body></body>
+
+3)external tag
+-------------------------
+<meta>
+<link>
+<title>
+<style>
+<script>
+
+<meta>
+---------
+    
+It contains web  information that is. data about data
+
+Example:-
+			design a webpage which will automatically refresh after 5 seconds onwards.........
+
+
+<html>
+	<head>
+		<meta http-equiv="refresh" content="5"/>
+	</head>
+</html>
+
+
+<link>
+----------
+
+It is used to navigate external document 
+
+
+
+example:-
+--
+<html>
+	<head>
+		<meta http-equiv="refresh" content="5,
+		url=http://www.litindia.in" />
+		<link rel="icon" href="image.jpg"/>
+	</head>
+</html>
+
+
+<title>
+----------------
+
+It is used to set the title of the webpage.
+
+Example:-
+
+	<html>
+	<head>
+		<!--meta http-equiv="refresh" content="5,
+		url=http://www.litindia.in" /> -->
+		<link rel="icon" href="jaga.jpg"/>
+		<title>LIT - Training | java |python |oracle</title>
+	</head>
+</html>
+
+
+
+<style>
+---------------
+
+It is used for written style information .
+
+Example:-
+
+<html>
+	<head>
+		<!--meta http-equiv="refresh" content="5,
+		url=http://www.litindia.in" /> -->
+		<link rel="icon" href="jaga.jpg"/>
+		<title>LIT - Training | java |python |oracle</title>
+		<style type="text/css">
+		body{
+				background-color:green;
+		}
+		</head>
+	</head>
+</html>
+
+
+
+
+<script>
+----------
+
+example:-
+
+
+<html>
+	<head>
+		<!--meta http-equiv="refresh" content="5,
+		url=http://www.litindia.in" /> -->
+		<link rel="icon" href="jaga.jpg"/>
+		<title>LIT - Training | java |python |oracle</title>
+		<style type="text/css">
+		body{
+				background-color:green;
+		}
+		</style>
+		<script type="text/javascript">
+			document.write("<h1>"+Date()+"</h1")
+		</script>
+		</head>
+	</head>
+</html>
+
+<input>
+---------
+by default it provides a textfield
+Each  tag has some attributes 
+
+example:-
+
+	<html>
+<head>
+	<style type="text/css">
+	body{background-color: green;}
+	</style>
+</head>
+<body>
+	<input></input>
+	<br/><br/>
+	<input/><br/> <br/>
+	<input placeholder="search"></input>
+	<br/>
+	<input disabled="disabled"></input>
+	<br/>
+	<input type="text" value="search" disabled="disabled"></input>
+</body>
+
+
+<input/>
+--------------
+by default it provides a textfield
+Each tag has some attributes
+
+
+Differences between checkbox and radio button
+===============================================
+check box is used to multi selection functionally
+where radio button is used to single sleection functionally
+
+checkbox can be checked and unchecked where as radio button  only can be checked.
+if we want to unchecked the radio button then we must 
+give the same name in name attribute.
+
+
+
+
+<form>
+--------------
+1.It is a container which contains input elements
+2.Form is used to send name and value into the proces,when user click the submit button by using and post  
+	method
+	3.by default method is get.
+
+
+
+
+<input type="submit"/>
+it is used to preapared a submit button.
+
+
+It gives request to the form for sending name and value into the process
+
+
+
+
+<html>
+<head></head>
+<body>
+
+	<form method="post">
+		User_name :<input type="text" name="uid"></input>
+		<br/>
+		password:<input type="text" name="pwd"></input>
+		<br/>
+		<input type="submit" value="login"></input>
+		<input type="button" value="click"></input>
+
+	</form>
+	
+</body>
+</html>
+
+
+
+
+
+<html>
+<head></head>
+<body>
+
+	<form method="post">
+		User_name :<input type="text" name="uid"></input>
+		<br/>
+		password:<input type="text" name="pwd"></input>
+		<br/>
+		Enter ur email:<input type="email" value="mail"></input>
+		<input type="submit" value="login"></input>
+		<input type="button" name="click"></input>
+		
+
+	</form>
+	
+</body>
+</html>
+
+
+
+
+
+
+<html>
+<head></head>
+<body>
+
+	<form method="post">
+		User_name :<input type="text" name="uid"></input>
+		<br/>
+		password:<input type="text" name="pwd"></input>
+		<br/>
+		Enter ur email:<input type="email" name="mail"></input>
+		<input type="submit" value="login"></input>
+		<!--<input type="button" name="click"></input>-->
+		<input type="submit" value="ok" formnovalidate=""></input>
+
+
+	</form>
+	
+</body>
+</html>
+
+
+
+<html>
+<head>
+<body>
+<audio controls>
+	<source src="audio.mp3" type="audio/mpeg">
+</audio>
+<br/>
+
+
+<video controls height="300px" width="400px;">
+	<source src="lit.mp4" type="video/mp4">
+</video>
+</body>
+</head>
+</html>
+
+
+
+
+<a>
+---------
+it is used to navigation functionally.
+
+Ex:-
+	
+
+
+	
+	<fieldset>
+		<legend>Address</legend>
+		<h3>Name:abcdefg afaf</h3>
+		<h3>lit</h3>
+		<h3>bbsr</h3>
+		<h3>5845797587</h3>
+	</fieldset>	
+
+
+
+
+<html>
+<head></head>
+<body>
+
+<a href="a.html">My Address</a>	
+<br/>
+<a href="contact.html">contact us</a>
+</body>
+</html>	
+
+
+
+<html>
+<head></head>
+<body>
+<a href="a.html">My Address</a>	
+<br/>
+<a href="contact.html">contact us</a>
+<br/>
+<a href="img1.jpg">sachin</a>
+<br/>
+<a href="img2.jpg">mahi</a>
+<br/>
+<a href="img3.jpg">virat</a>
+<a href="f.zip">download</a>
+</body>
+</html>	
+
+
+
+<html>
+<head></head>
+<body>
+<iframe src="" name="chasma" height="300px"></iframe>
+<br/>
+<a href="a.html" target="chasma">My Address</a>	
+<br/>
+<a href="contact.html" target="chasma">contact us</a>
+<br/>
+<a href="img1.jpg" target="chasma">sachin</a>
+<br/>
+<a href="img2.jpg" target="chasma">mahi</a>
+<br/>
+<a href="img3.jpg" target="chasma">virat</a>
+<!--<a href="f.zip">download</a>-->
+</body>
+</html>	
+
+
+
+
+
+
+
+
+
+
+	<html>
+	<head></head>
+	<body>
+	<p id="t"></p>
+	<a href="#j">java</a> | <a href="#o">oracle</a> | <a href="#ph">php</a>
+	<p id="j">
+		java is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simplejava is simple
+		<br/>
+		<a href="#t">goto top</a>
+	</p>
+	<p id="o">
+		oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.oracle is a database.
+		</p>
+		<br/>
+		<a href="#t">goto top</a>
+	<p id="ph">	
+		php is a server side scripting language.php is a server side scripting language.php is a server side scripting language.php is a server side scripting language.php is a server side scripting language.php is a server side scripting language.php is a server side scripting language.php is a server side scripting language.php is a server side scripting language.php is a server side scripting language.php is a server side scripting language.php is a server side scripting language.php is a server side scripting language.php is a server side scripting language.php is a server side scripting language.php is a server side scripting language.php is a server side scripting language.php is a server side scripting language.php is a server side scripting language.php is a server side scripting language.php is a server side scripting language.php is a server side scripting language.php is a server side scripting language.php is a server side scripting language.php is a server side scripting language.php is a server side scripting language.php is a 
+		</p>
+		<br/>
+		<a href="#t">goto top</a>
+		</body>
+		</html>
+
+
+	<table>
+	--------------
+	<caption>---------------it is used to set the title of the table
+	<table>-----------------it is used to create a table
+	<tr>--------------------define the row of the table
+	<td>--------------------define a cell ,by default text is normal and left aligned
+	<th>--------------------define a cell, by default text is bold and center aligned
+	cellspacing-------------distance between two cell border
+	cellpadding-------------distance between cell border and text
+	rowspan-----------------merging the cell row wise
+	colspan-----------------merging the cell column wise
+
+
+
+Example
+==========
+
+<html>
+<head></head>
+<body>
+	
+	<table border="1" cellspacing="0" cellpadding="10" width="60%">
+		<caption>Student</caption>
+		<tr>
+			<th>Name</th>
+			<th>Roll</th>
+		</tr>	
+		<tr>
+			<td>raja</td>
+			<td>101</td>
+		</tr>
+		<tr>
+			<td>kahja</td>
+			<td>102</td>
+		</tr>
+		<tr>
+			<td>saja</td>
+			<td>103</td>
+		</tr>
+	</table>
+</body>
+
+
+
+
+
+
+
+<html>
+<head></head>
+<body>
+	
+	<table border="1" cellspacing="0" cellpadding="10" width="60%">
+		<caption>Mark</caption>
+		<tr>
+			<th rowspan="2">Math</th>
+			<th>p1</th>
+			<th>p2</th>
+		</tr>
+		<tr>
+			<td>71</td>
+			<td>72</td>
+		</tr>
+		<tr>
+			<th>English</th>
+			<td colspan="2">68</td>
+		</tr>
+	</table>
+</body>
+
+
+
+
+
+
+Example
+----------
+<br/> ----to create a new line
+<bdo> ----Bi Directional Object
+It is used to override the current text direction
+
+Ex:-
+------
+<strong> or <b> --- make the specified text bold
+<center> ----- center align
+
+<dl> ----- document list
+<dt> ----- document type
+<dd> ----- document desription
+
+
+
+
+<html>
+<head></head>
+<body>
+	<bdo dir="rtl">litindia</bdo>
+
+	<br/>
+	<strong>hello World</strong><br/>
+
+
+	<b>Hello world</b>
+	<center>Chasma is simple</center><br/>
+
+	<dl>
+		<dt> java></dt>
+		<dd>java is a progarmming language</dd>
+		<dt>oracle</dt>
+		<dd>Oracle is a database</dd>
+		<dt>php</dt>
+		<dd>Php is a server side scripting language</dd>
+	</dl>
+</body>
+</html>
+
+
+
+Ex:-
+------
+
+<del>----- a text with a deleted part
+<h1>----<h6>---the six differnt heading
+<i/>-----italic
+
+<ol> ------order list
+<li>----------list
+<ul>----------un-order list
+<select>------- to create a drop-downlist /combo-box
+
+
+
+
+
+
+hello
+			hi
+					bye
+
+
+<pre>
+
+hello
+			hi
+					bye
+</pre>
+
+
+
+
+1<sup>st</sup>---------super script
+2<sub>nd</sub>---------sub script
+
+
+
+<details>
+	<summary>A.P.J ABDUL KALAM</summary>
+	<p>Success is whn ur "signature" changes into autograph</p>
+	<h1>one of the very important characteristics of a student is question.Let uthe student askquestion.
+</details>
+
+
+
+<input list="course"></input>
+<datalist id="course">
+	<option value="java"></option>
+	<option value="oracle"></option>
+	<option value="php"></option>
+</datalist>
+
+
+<marquee>
+<h1 style="color: red">welcome to all adv java students</h1>
+</marquee>			//the line floats from right to left
+
+
+
+<marquee direction="up"
+scrollamount="40"
+onmouseover ="this.stop()">
+<h1 style="color: red">welcome to all adv java students</h1>
+</marquee>
+
+
+		</body>
+		</html>
+
+
+		CSS
+========================
+CSS stands for Cascading  style sheet.
+
+
+job of css
+------------
+It describes how html elements are display in the browser.
+It saves a lot of work
+At once it controls the layout of multiple webpages
+
+style sheet
+-------------
+In word processing and desktop publishing , a style sheet is a file form that defines
+the layout of a document.
+
+In other words it is an  information apply over an elements for customize the elements
+
+customize means tit can change the color , border , opacity etc....
+
+There are three different way we can apply style infromation
+over onr or more than  elements.
+
+1) inline
+2)embeded or internal
+3)external
+
+
+1)inline
+--------------
+here the style information written inside the tag by using style attribute..
+In other words it is used  to apply unique style to a single html  doocument....
+
+Example:--
+-------------
+
+embeded style sheet
+===================
+It is used only for a single html pages..
+here the  style infromation is written by enclosing <style> tag in the <head> part of the page.
+Here the inforamtion apply over all elements by using three different ways.
+
+
+1. by tagname
+2. by id name(#)
+3. by class name(.)
+
+
+Example
+----------
+
+
+
+<html>
+<head>
+	<style type="text/css">
+	p,h1{
+		background-color: red;
+		color: yellow;
+		}
+		</style>
+</head>
+
+<body>
+
+	<p style="background-color: aqua;color: red">Two wrongs dont make a right</p>
+	<p style="background-color: aqua;color: green">Two wrongs dont make a right</p>
+	<p style="background-color: aqua;color: pink">Two wrongs dont make a right</p>
+
+<h1>No man is island</h1>
+<h1>No man is island</h1>
+
+</body>
+</html>	
+
+
+
+
+
+<style type="text/css">
+	h1{
+		background-color: red;
+		color: white;
+	}
+	#d1{background-color: yellow}
+	.pk{
+		background-color: yellow;
+		color: blue;
+		font-size: 200%;
+		padding: 30px;
+		margin-top: 100px;
+		width: 60%;
+		margin-left: 50px;
+	}
+</style>
+</head>
+<body>
+	<h1>The pen is mighter than than a sword</h1>
+	<h1 class="pk">when the going is tough the tough is going</h1>
+	<h1>The pen is mighter than than a sword</h1>
+	<h1 id="d1">Hope for the best</h1>
+</body>
+
+
+
+
+
+
+
+how to assign a color
+------------------------
+color : red
+color : #ff0000;
+color : rgb(9, 100%, 64%)
+color : hsl(9, 100%, 64%)hue stauration light
+color : rgba(255,0,0)
+color :hsla(9, 100%, 64%, 0.5)
+
+
+a-alpha
+----------
+the alpha parameter is a number between 0.0 (fully transparent)
+and 1.0 (fully opaque)
+
+
+
+<html>
+<head>
+	<style type="text/css">
+	div{
+		height: 400px;
+		width: 500px;
+		/*background-color:red;*/
+		/*background-color:#ff0000;*/
+		/*background-color:rgba(255,0,0); 
+		/*background-color: hsl(9,100%,64%);*/
+		background-color: rgba(255,0,0,0.9);
+		background-color: hsla(9,100%,64%,0.5);
+		}
+		</style>
+		</head>
+		<body>
+			<div></div>
+		</body>
+		</html>
+
+
+border_color property
+-----------------------
+it sets the color of an elements in four borders.
+
+if the border-color property has four values..
+
+	ex:-
+
+		border-color : red green blue pink 
+		-top border is red
+		-right border is green
+		-bottom border is pink
+		-left border is  blue.
+
+if the border-color property has three values
+	border-color:red green blue
+	-top border is red
+	-right is green.
+	-bottom is blue.
+
+if the border-color property has single value
+	border-color :red			
+-all the four borders are red.
+
+Examples: 
+-------------
+<html>
+<head>
+	<style type="text/css">
+	h1{
+		border-style:dashed; 
+		border-color:red;
+	}
+
+
+	</style>
+</head>
+<body>
+		<center><h1>Chasma is simple</center>
+</body>
+</html>
+
+
+
+
+
+<html>
+<head>
+	<style type="text/css">
+	h1{
+		border-style:dashed; 
+		/*border-color:red;*/
+		/*border-color:red green;*/
+		border-color: red green blue pink;
+	}
+
+
+	</style>
+</head>
+<body>
+		<center><h1>Chasma is simple</center>
+</body>
+</html>
+
+
+
+
+<html>
+<head>
+	<style type="text/css">
+	#d1{
+		height: 400px;
+		width: 400px;
+		background-color: rgb(255,0,0);
+		}
+		#d1:hover{
+			height: 400px;
+			width: 700px;
+			background-color: yellow;
+		}
+		#d2{
+			height: 400px;
+			width: 500px;
+			background-color: rgb(255,0,255);
+		}
+		#d2:hover{
+			background-image: url('s1.png');
+		}
+		#d3{
+			height: 400px;
+			width: 500px;
+			background-image: url('s1.png');
+		}	
+		#d3:hover{
+			opacity: 0.3;
+
+			</style>
+		</head>
+		<body>
+			<div id="d1"></div>
+			<div id="d2"></div>
+			<div id="d3"></div>
+
+		</body>
+		
+</html>
+
+
+
+
+
+
+<!--Linear Gradient-->
+<html>
+<head>
+	<style type="text/css">
+
+	#d1{
+		height: 400px;
+		width: 400px;
+		background-image: -webkit-linear-gradient(top left,#ff0000 0%,#00ff00 100%)
+	}
+	</style>
+	
+</head>
+<body>
+<div id="d1">
+</body>
+</html>
+
+
+
+<!--Linear Gradient-->
+<html>
+<head>
+	<style type="text/css">
+
+	#d1{
+		height: 400px;
+		width: 400px;
+		background-image: -webkit-linear-gradient(top left,#ff0000 0%,#00ff00 100%)
+	}
+	#d2{
+		height: 400px;
+		width: 400px;
+		background-image: -webkit-linear-gradient(bottom left,#ff0000 0%,#00ff00 100%)
+	}
+	</style>
+	
+</head>
+<body>
+<div id="d1"></div>
+<div id="d2"></div>
+</body>
+</html>
+
+
+
+<!--Example of box-shadow-->
+<html>
+<head>
+	<style type="text/css">
+	div{	
+		height: 100px;
+		width:300px;
+		background-color: yellow;
+		box-shadow: 10px 10px 5px #888888
+	}
+
+	</style>
+</head>
+<body>
+	<div>
+		LIT- Susant K Rout's Center of Excellence 
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+<!--Transform-->
+<html>
+<head>
+	<style type="text/css">
+#d1{
+	height: 200px;
+	width: 200px;
+	background-color: red;
+	transform: translate(200px,300px);
+	transform: rotate(45deg);
+	transform: skew(30deg,20deg);
+}
+	</style>
+
+</head>
+<body>
+	<div id="d1"></div>
+	<div id="d2"></div>
+	<div id="d3"></div>
+
+</body>
+
+
+
+
+Examples:-
+------------
+
+animation-
+------------
+when an animation is created in @keyframe, we should be bind it into a selector,otherwise the animation will have no effect.
+There are two properties to bind the animation to a selector 
+1.specify the name of the animation.
+2.specify the duration of the animation.
+
+
+<html>
+<head>
+<style type="text/css">
+div{
+	width: 200px;
+	height: 600px;
+	background-color: red;
+	animation: chasma 5s
+
+}
+	
+	@keyframes chasma
+	{
+		from{background-color: red;}
+		to{height: 600px;width: 700px;background-color: yellow}
+	}
+	</style>
+</head>
+<body>
+
+<div></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<style type="text/css">
+div{
+	width: 400px;
+	height: 400px;
+	background-color: red;
+	animation: chasma 12s infinite;
+
+}
+	
+	@keyframes chasma
+	{
+		0%{background-color: red;}
+		25%{background-color:yellow;}
+		50%{background-color:blue;}
+		80%{background-color:green;}
+		100%{background-color:aqua;}
+	}
+	</style>
+</head>
+<body>
+
+<div></div>
+</body>
+</html>
+
+
+
+<!--color change forming square-->
+<html>
+<head>
+<style type="text/css">
+div{
+	width: 400px;
+	height: 400px;
+	background-color: red;
+	animation: chasma 9s infinite;
+	position: relative;
+}
+	
+	@keyframes chasma
+	{
+		0%{background-color: red;left: 0px;top: 0px;}
+		25%{background-color:yellow;left: 700px;top: 0px;}
+		50%{background-color:blue;left: 700px;top: 400px;}
+		80%{background-color:green;left: 0px;top: 400px;}
+		100%{background-color:aqua;left: 0px;top: 0px;}
+	}
+	</style>
+</head>
+<body>
+
+<div></div>
+</body>
+</html>
+
+
+
+=========================CODING==========================
+
+menu.html
+------------
+<html>
+<head>
+	<style type="text/css">
+	ul{
+		list-style-type: none;
+		margin:0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333;
+
+	}
+		li{
+			float: left;
+		  }
+	li a{
+		display:block;
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		padding: 15px 16px;
+		
+	}
+	li a:hover:not(.active)
+		{
+		background-color: #888888;
+		}
+			 .active{
+					background-color: green;
+					}
+	</style>
+</head>
+<body>
+	<ul>
+		<li><a class="active" href="#">Home</a></li>
+		<li><a href="#">Register</a></li>
+		<li><a href="#">Login</a></li>
+		<li><a href="#">About us</a></li>
+	</ul>
+</body>
+</html>
+
+
+JAVASCRIPT
+---------
+javascript is a client side scripting language.
+It provides  facility to perform any operation  in client browser .
+javascript is the most popular scripting language on the internet.
+It works in all major websites..
+
+
+what is the job of js?
+---------------------------
+It can react to events.
+It read and write html elements
+It is used to validate the data.
+It create cookies
+It is used to detect the visitor browsers.
+
+Javascript declaration
+-----------------------------
+javascript can decalre in three different ways:
+
+1.document type
+2.embeded type
+3.external type
+
+
+1.Document type
+---------------
+Here the javascript information written inside the body part of the webpage using script tag.
+
+Example to display the current date====
+==========================================
+
+<html>
+<head>
+<body>
+	<script type="text/javascript">
+		document.write ("<h1>"+Date()+"</h1>")
+	</script>	
+	</body>
+
+</head>
+
+
+2.embeded type/function
+---------------------------
+Here the javascript information written within stating and ending  tag of head part .
+
+Example to display date:-
+=============================
+
+
+//example to display date..
+<html>
+<head>
+	<script type="text/javascript">
+		function show()
+		{
+		document.getElementById("chasma").innerHTML=Date();
+		}
+
+	</script>
+</head>
+<body onload="show()">
+	<h1 id="chasma"></h1>
+
+
+</body>
+</html>
+
+
+
+external type
+-------------
+Here the javascript statement written with in a separate file and the file extension name must be .js
+
+Example
+=========
+display the current date when user click a button 
+
+
+lasthtml.html==
+
+<!-- //example to display date.. -->
+<html>
+<head>
+			<script type="text/javascript" src="lasthtml.js"></script>
+</head>
+<body>
+<button type="button" onclick="displayDate()">Display date</button>
+	<h1 id="demo"></h1>
+
+
+</body>
+</html>
+
+
+
+lasthtml.js
+---------
+function displayDate()
+{
+	document.getElementById("demo").innerHTML=Date();
+}
+
+
+JAVASCRIPT STATEMENT
+--------------
+
+1.javascript is a sequence of statements to be executed by the browsers.
+2.It is case sensitive.
+3.javascript statement command to the browsers , the purpose of the command is to tell the browsers what to do ?/
+
+
+Comments in javascript
+---------------------------
+//----single line comment
+/*---------- multiline comment
+
+
+javascript variables
+----------------------
+var is the only unique way to declare  variable in javascript.
+
+ex:-
+====
+
+var i=20;
+var  name="chasma";
+var ch='a';
+
+
+Example  
+=========
+add between two number using javascript
+
+
+<html>
+<head>
+	<script type="text/javascript">
+	function show()
+	{
+		var i=parseInt(document.getElementById("fno").value);
+		var j=parseInt(document.getElementById("sno").value);
+		document.write(i+j);
+		
+	}
+</script>
+</head>
+<body>
+	ENTER FIRST NUMBER : <input  type="text" id="fno"></input>
+<br/>
+	ENTER SECOND NUMBER : <input  type="text" id="sno"></input>
+<br/>
+	<input type="button" value="add" onclick="show()"></input>
+<br>
+
+</body>
+</html>
+
+
+
+
+
+
+<html>
+<head>
+	<script type="text/javascript">
+	function show()
+	{
+		var i=parseInt(document.getElementById("fno").value);
+		var j=parseInt(document.getElementById("sno").value);
+		//document.write(i+j);
+		var result=i+j;
+		document.getElementById("res").value=result;
+		document.getElementById("r").innerHTML="Result is :"+result
+	}
+
+</script>
+</head>
+<body>
+	ENTER FIRST NUMBER : <input  type="text" id="fno"></input>
+<br/>
+	ENTER SECOND NUMBER : <input  type="text" id="sno"></input>
+<br/>
+	<input type="button" value="add" onclick="show()"></input>
+<br>
+Result : <input type="text"  id="res"></input>
+
+<br>
+<h1 id="r"></h1>
+</body>
+</html>
+
+
+
+
+Swap between two strings..
+--------------------------------
+<html>
+<head>
+	<script type="text/javascript">
+		function swap()
+		{
+			var temp=document.getElementById("first").value;
+			document.getElementById("first").value=document.getElementById("second").value;
+			document.getElementById("second").value=temp;
+		}
+</script>
+</head>
+<body  style="background-color:white ">
+	<input style="background-color: red;color: yellow" type="text" id="first"></input>
+	weds
+	<input style="background-color: red;color: yellow" type="text" id="second"></input>
+	<br/><br/>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+	
+	<input type="button" value="swap" onclick="swap()"  style="background-color: white;color: green"></input>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

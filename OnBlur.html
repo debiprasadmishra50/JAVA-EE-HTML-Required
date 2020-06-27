@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function myFunction() 
+		{
+			var v = document.getElementById("fname");
+			v.value = v.value.toUpperCase();
+			v.value = v.value.toLowerCase();
+			v.value = v.value.initCap();
+		}
+	</script>
+</head>
+<body>
+	Enter Ur Name : <input type="text" id="fname" onblur="myFunction()" >
+</body>
+</html>

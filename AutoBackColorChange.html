@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		var arr = new Array("red", "green", "blue", "violet", "black");
+		var i = 0;
+		function changeColor() 
+		{
+			document.body.bgColor = arr[i];
+			i++;
+			if(i==arr.length)
+			{
+				i=0;
+
+			}
+			setTimeout("changeColor()" , "1000");	
+		}
+	</script>
+</head>
+<body onload="changeColor()">
+
+</body>
+</html>

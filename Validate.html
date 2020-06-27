@@ -1,0 +1,34 @@
+<!--Validate a mobile number
+---------------------------------
+	 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function validate() 
+		{
+			var v = document.getElementById("t1").value;
+			if (isNaN(v)) 
+			{
+				alert("Enter only numbers");
+				return false;
+			}
+			else if(v.length > 11 || v.length != 10)
+			{
+				alert("Enter correct phone number");
+				return false;
+			}
+			else if(v.charAt("t1") != "9")
+			{
+				alert("phone number starts with 9, enter a correct number");
+				return false;
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="t1">
+	<input type="button" name="b1" value="Check" onclick="validate()">
+</body>
+</html>

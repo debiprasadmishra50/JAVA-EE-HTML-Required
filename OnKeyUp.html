@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function writeMessage() 
+		{
+			document.forms[0].mySecondInput.value = document.forms[0].myInput.value;
+		}
+	</script>
+</head>
+<body>
+	<form>
+		Enter ur name :
+		<input type="text" name="myInput" onkeyup="writeMessage()" size="20">
+		<input type="text" name="mySecondInput" size="30">
+	</form>
+</body>
+</html>
